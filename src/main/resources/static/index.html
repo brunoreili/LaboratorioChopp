@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        
+    </head>
+    <body ng-app="botapp" ng-controller="botctrl">
+        <div>
+            texto: <input type="text" ng-model="texto"> <br>
+            <button ng-click="enviar(texto)">Enviar</button>
+
+            <br/>
+            <h1 ng-show="enviando">Enviando...</h1> 
+        </div>
+        <div>
+            <h3>Resposta:</h3>
+            {{resposta.data.texto}}
+        </div>    
+        <script src="app.js"></script>
+        
+        <br/><br/><br/><br/><br/>
+        <!--Link do telegram-->
+        <a href="http://telegram.me/testechoppbot" target="_self">
+            <div class="vc_single_image-wrapper   vc_box_border_grey">
+                <img width="332" height="59"
+                     src="http://www.estherbot.com/wp-content/uploads/2015/03/Sign-up-button-Copy-2@1x.png"
+                     class="vc_single_image-img attachment-full" alt="Sign up button Copy 2@1x"
+                     srcset="http://www.estherbot.com/wp-content/uploads/2015/03/Sign-up-button-Copy-2@1x.png 332w,
+                             http://www.estherbot.com/wp-content/uploads/2015/03/Sign-up-button-Copy-2@1x-300x53.png 300w,
+                             http://www.estherbot.com/wp-content/uploads/2015/03/Sign-up-button-Copy-2@1x@2x.png 664w"
+                     sizes="(max-width: 332px) 100vw, 332px" />
+            </div>
+        </a>
+
+    </body>
+    
+</html>
